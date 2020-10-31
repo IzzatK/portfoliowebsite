@@ -1,6 +1,32 @@
-jumbotron{
+.row-header {
+    margin: 0px auto;
+    padding: 0px auto;
+
+}
+.row-content {
+    margin: 0px auto;
+    padding: 50px 0px 50px 0px;
+    border-bottom: 1px ridge; 
+    min-height: 400px;
+}
+.footer {
+    background-color: #c7b7e4;
+    margin: 0px auto;
+    padding: 20px 0px 20px 0px;
+}
+
+.jumbotron{
     padding: 70px 30px 70px 30px;
     margin: 0px auto;
     background-color:#6c3b88  !important; 
     color: floralwhite !important;
+}
+
+.address{
+    font-size: 80%;
+    margin: 0px;
+    color: #0f0f0f;
+}
+.text-header{
+  
 }
