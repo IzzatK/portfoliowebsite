@@ -3,6 +3,16 @@
     padding: 0px auto;
 
 }
+@media(max-width:480 px){ /*used to add padding,margin or other necessary props to style div classes */
+.jumbotron{
+    padding-left:50px
+    padding-right 50px
+    padding-top 50px
+    padding-bottom 50px;
+
+}
+
+}
 .row-content {
     margin: 0px auto;
     padding: 50px 0px 50px 0px;
