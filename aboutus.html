@@ -15,23 +15,25 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-dark navbar-expand-sm  fixed-top">
+
+    <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
         <div class="container"> <!-- the contents of nav bar will spread across screen w/o div container-->
             <button class="navbar-toggler" type="button" data-toggle="collapse"data-target="#Navbar"> <!-- the button collapses on sm-xs screen size-->
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand mr-auto" href="#">Ristorante Con Fusion</a>
+            <a class="navbar-brand mr-auto" href="index.html">Ristorante Con Fusion</a>
             <div class="collapse navbar-collapse" id="Navbar">
                <ul class="navbar-nav mr-auto">
-                  <li class="nav-item active"><a class="nav-link" href="#">Home</a></li> <!-- active tag specifies current page-->
-                  <li class="nav-item"><a class="nav-link" href="./aboutus.html">About</a></li>
+                  <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li> <!-- active tag specifies current page-->
+                  <li class="nav-item active"><a class="nav-link" href="#">About</a></li>
                   <li class="nav-item"><a class="nav-link" href="#">Menu</a></li>
                   <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
             </div>
                 </ul>
         </div>
     </nav>
-     <header class="jumbotron">
+
+    <header class="jumbotron">
         <div class="container"> <!-- the body content of this page is apart of one container, with individual rows-->
             <div class="row row-header">
                 <div class="col-12 col-sm-6">
@@ -40,13 +42,17 @@
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 
                 </div>
-                
+               
             </div>
         </div>
     </header>
 
     <div>
         <div>
+            <ol class="col-12 breadcrumb">
+                <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+                <li class="breadcrumb-item">About Us</li>
+            </ol>
             <div class="row-header col-10 sm-4">
                <h3 class=>About Us</h3>
             
@@ -64,9 +70,8 @@
         </div>
 
 
-        <div class="row-content col-8 sm-4">
-            <div> <!-- add a nested row-content col-x, if you must style margin and 
-                       and further divide the page, like for the Pelicana Chicken website's <h3> element -->
+        <div class="row-content col-8 sm-3">
+            <div class="row-content col-6 sm-2">
                 <h2>Corporate Leadership</h2>
                 
                 <h3>Peter Pan <small>Chief Epicurious Officer</small></h3>
@@ -97,7 +102,7 @@
                     <h5>Links</h5>
                     <ul class="list-unstyled">
                         <li><a href="#">Home</a></li>
-                        <li><a href="./aboutus.html">About</a></li>
+                        <li><a href="#">About</a></li>
                         <li><a href="#">Menu</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
