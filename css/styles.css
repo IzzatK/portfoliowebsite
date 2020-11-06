@@ -23,6 +23,17 @@
     background-color: #c7b7e4;
     margin: 0px auto;
     padding: 20px 0px 20px 0px;
+    background-size: 1000%;
+}
+.footer-contactus{
+    background-color: #c7b7e4;
+    margin: 0px auto;
+    padding: 20px 0px 20px 0px;
+    background-size: 1000%;
+}
+.full-width-div{
+    position: absolute;
+    width:100%;
 }
 
 .jumbotron{
@@ -45,7 +56,7 @@ body{
     background-color:#512da8 !important;
 }
 .fa-phone{
-    font-size:15px;
+    font-size:15px; /* Pelicana Chicken icon at top left can be a custom icon of company logo, alongside rectangular logo*/
 }
 .fa-fax{
     font-size:15px;
