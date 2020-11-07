@@ -3,6 +3,9 @@
     padding: 0px auto;
 
 }
+.form-control{
+    width:80%;
+}
 @media(max-width:480 px){ /*used to add padding,margin or other necessary props to style div classes */
 .jumbotron{
     padding-left:50px
