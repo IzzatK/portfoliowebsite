@@ -22,6 +22,19 @@
     border-bottom: 1px ridge; 
     min-height: 400px;
 }
+#rowquote{
+    margin: 0px auto;
+    padding: 50px 0px 50px 0px;
+    min-height: 400px;
+    border-bottom:0px; /* used id selector in css to remove border from this row content*/
+}
+#d-flexrow{
+    margin: 0px auto;
+    padding: 50px 0px 50px 0px;
+    min-height: 400px;
+    border-bottom:0px; /* used id selector in css to remove border from this row content*/
+}
+
 .footer {
     background-color: #c7b7e4;
     margin: 0px auto;
