@@ -14,10 +14,17 @@
     padding-bottom 50px;
 
 }
-#container1{
-    float:top;
-}
 
+
+
+}
+.mt-0{
+    margin-right:50px;
+    padding-right:50px;
+}
+.mt-1{
+    margin-left:50px;
+    padding-left:50px;
 }
 #pizzaflex{
     margin:50px;
