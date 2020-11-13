@@ -13,15 +13,27 @@
     padding-top 50px
     padding-bottom 50px;
 
-}
-
-
+    
 
 }
-.mt-0{
-    margin-right:50px;
-    padding-right:50px;
+
+.text-right{
+    margin:50px;
 }
+
+}
+.custom-container{
+border-radius:2px; /* best way to align content horizontally on a page is to add border and border-radius*/
+border:1px solid black;
+padding-top:-500px;
+}
+#Radios1{
+    margin:5px;
+}
+#reservationcard{
+    
+}
+
 .mt-1{
     margin-left:50px;
     padding-left:50px;
@@ -35,6 +47,8 @@
     border-bottom: 1px ridge; 
     min-height: 400px;
 }
+
+
 #rowquote{
     margin: 0px auto;
     padding: 50px 0px 50px 0px;
