@@ -42,39 +42,65 @@
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 
                 </div>
-                <div class="col-4 col-sm-4 order-sm-last "><!-- give this image 4 columns, to center it inside of the 12 col Bootstrap layout-->
+                <div class="col-4 col-sm-4  "><!-- give this image 4 columns, to center it inside of the 12 col Bootstrap layout-->
                     <img src="img/logo.png" class="img-fluid float-right"> <!-- image inside-->
                 </div>
                 <div class="col-4">
-                    <!--Reserve table button goes here-->
+                    <button type="button" class="btn btn-primary btn-lg">Reserve</button>   <!--Reserve table button goes here-->
                 </div>
                 
             </div>
         </div>
     </header>
+<div class="d-flex offset-1">
+    <div class="card">
 
+        <div class="card-header text-left bg-white d-xl-none d-l-none"id="cardheaders"> <!-- this div is hidden for xl and l-->
+           This Month's Promotions
+        </div>
+    <div class="row">
+    
+        <div class="col-4 mr-2 "> <!-- this header div is hidden for s and xs-->
+            <h3 class="text-center d-none d-sm-block">This Month's Promotions</h3>
+        </div>
+        <div class="col-3  " id="buffetbadge"> <!-- this badge div takes up 8 cols of row row-content-->
+            <h3 class="d-none d-sm-block">Weekend Grand Buffet<span class="badge badge-secondary m-1">New</span></h3>
+            <h5 class="d-xl-none d-l-none">Weekend Grand Buffet<span class="badge badge-secondary m-1">New</span></h5>
+            <p class="d-none d-sm-block">Featuring mouthwatering combos with a choice of five different salads,<br>
+            six enticing appetizers, six main entrees and fice choicest desserts. Free<br>
+            flowing bubbly and soft drinks. All for just $19.99 per person.</p>
+        </div>
+        <div class="col-4 justify-content-right ">
+            <img class="img-thumbnail float-right" src="img/tikkapizza.png">
+        </div>
+        </div>
+    </div>
+</div>
     
     
-        <div class="custom-container container"> <!-- create a custom container to fix the top margin, add m-md-5 to move container left-->
-            <div class="embed-responsive embed-responsive-16by9"><!-- media container-->
-            <div class="row  align-items-top justify-content-center">
-                <div class="col-10 col-sm-4 order-sm-last col-md-6" id="pizzadescription">
-                   <h3 class="mt-1">Lipsmacking Culinary Creations</h3>
-                    <h2 class=" mt-1">Paki Pizza</h2>
-                    <p class="mt-1  d-none d-sm-block">Unique combo of South Asia and West Europe</p> <!-- custom classes for padding and margin-->
+        <div class="d-flex offset-1"> <!-- create a custom container to fix the top margin, add m-md-5 to move container left-->
+            <div class="card"><!-- media container-->
+                <div class="card-header text-right bg-white d-xl-none d-l-none"id="cardheaders">
+                    Our Lipsmacking Culinary Creations
+                </div>
+            <div class="row">
+                <div class="col-2  order-sm-last" id="pizzadescription">
+                   <h2 class="pr-5 d-none d-sm-block" >Lipsmacking Culinary Creations</h2>
+                  <!-- custom classes for padding and margin-->
                 </div> 
             
-                <div class= "col 5 col-sm order-sm-first col-md-4">
-                    <div class="d-flex mr-3 media">
-                        <h2 class="media-heading"></h2>
-                        <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/tikkapizza.png">
-                        <div class="media-body">
-                            <h4 class="">Delicious<span class="badge badge-danger">Hot</span><span class="badge badge-pill badge-secondary">$4.99</span></h2>
-                            <P class=" mr-8">paragraph of pizza media obj, add custom class to the p's and h's</P> <!-- add margin to this p-->
+                <div class= "col 3 col-sm order-sm-first col-md-3">
+                    
+                        
+                        <img class="img-thumbnail align-self-left" src="img/tikkapizza.png">
+                </div>
+                        <div class="col-7 ">
+                            <h4 id="">Uthapizza<span class="badge badge-danger">Hot</span><span class="badge badge-pill badge-secondary">$4.99</span></h4>
+                            <P class=" mr-1 d-none d-sm-block">paragraph of pizza media obj, add custom class to the p's and h's</P> <!-- add margin to this p-->
                             
                          <!-- empty media-body-->
                         </div>
-                    </div>
+                    
                 </div> 
                 
             </div>
@@ -162,7 +188,7 @@
             <div class="card" id="reservationcard">
                 <h3 class="card-header bg-yellow text-white text-center">Hello</h3>
                     <div class="card-body">
-                        <div class="row justify-content-left">
+                        <div class="row offset-2 justify-content-left"> <!-- create individual rows for div=card-body-->
                             <p class="text-center mr-5" id="reservecardpars">Number of <br>Guests</p>
 
                             <label class="radio-inline align-self-center">
@@ -198,15 +224,15 @@
 
 
                         </div>
-                        <div class="row justify-content-left">
+                        <div class="row offset-2 justify-content-left">
                             <p class="text-center  mr-5"id="reservecardpars" >Date and <br>Time</p>
                             <form><label class="align-self-center"for="date"><input type="text" id="date" name="date" placeholder="Date"></label>
                                   <input type="text" id="time" name="time" placeholder="Time">
                             </form>
 
                         </div>
-                        <div class="row justify-content-left">
-                            <!-- add Reserve button-->
+                        <div class="row justify-content-center">
+                            <button type="button" class="btn btn-primary btn-lg">Reserve</button>
                         </div>
                     </div>
 

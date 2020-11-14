@@ -12,9 +12,14 @@
     padding-right 50px
     padding-top 50px
     padding-bottom 50px;
+
+    
     
 
 }
+#buffetbadge{
+    text-align:center;
+    }
 
 .text-right{
     margin:50px;
@@ -26,6 +31,13 @@ border-radius:2px; /* best way to align content horizontally on a page is to add
 border:1px solid black;
 padding-top:-500px;
 }
+#cardheaders{
+    border:0px;
+
+    font-size:24px;
+    
+}
+
 #Radios1{
     margin:5px;
 }
