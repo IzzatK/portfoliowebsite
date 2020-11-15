@@ -17,6 +17,7 @@
     
 
 }
+
 #buffetbadge{
     text-align:center;
     }
@@ -24,6 +25,22 @@
 .text-right{
     margin:50px;
 }
+#cardimg{
+    max-width: 200%;
+    height:auto;
+}
+#cardimg2{
+    width:50%;
+    height:auto;
+    padding-top:20px;
+}
+#cardimg3{
+    width:42%;
+    height:auto;
+    padding-top:20px;
+    border: 0px;    
+}
+
 
 }
 .custom-container{
@@ -37,13 +54,55 @@ padding-top:-500px;
     font-size:24px;
     
 }
+.card-img-right{
+    width:100%;
+    height:auto;
+}
+#cardimg{
+    width:72%;
+    height:auto;
+}
+#cardimg2{
+    width:50%;
+    height:auto;
+    padding-top:20px;
+}
+#cardimg3{
+    width:42%;
+    height:auto;
+    padding-top:20px;
+    border: 0px;    
+}
 
 #Radios1{
     margin:5px;
 }
-#reservationcard{
+#cardsideheader{
+    padding-right:50px;
+}
+#card2{
+    width:100%;
+    border:0px;
+    margin-bottom:50px;
+}
+#card1{
+width:100%;
+border:0px;
+margin-bottom:50px;
+
+}
+#card3{
+    width:100%;
+    border:0px;
+    margin-bottom:50px;
+
     
 }
+#smbutton{
+ margin-left:70px;
+}
+    
+
 
 .mt-1{
     margin-left:50px;
