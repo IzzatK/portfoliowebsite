@@ -26,16 +26,16 @@
     margin:50px;
 }
 #cardimg{
-    max-width: 200%;
+   width:70%;
     height:auto;
 }
 #cardimg2{
-    width:50%;
+    width:70%;
     height:auto;
     padding-top:20px;
 }
 #cardimg3{
-    width:42%;
+    width:70%;
     height:auto;
     padding-top:20px;
     border: 0px;    
