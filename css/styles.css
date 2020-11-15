@@ -43,6 +43,12 @@
 
 
 }
+#indexsmimg{
+    width: 40%;
+    height:auto;
+   
+}
+
 .custom-container{
 border-radius:2px; /* best way to align content horizontally on a page is to add border and border-radius*/
 border:1px solid black;
