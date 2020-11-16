@@ -1,6 +1,4 @@
-$theme-colors{
-    primary:purple;
-}
+
 
 .row-header {
     margin: 0px auto;
@@ -10,6 +8,7 @@ $theme-colors{
 .form-control{
     width:80%;
 }
+
 @media(max-width:480 px){ /*used to add padding,margin or other necessary props to style div classes */
 .jumbotron{
     padding-left:50px
@@ -47,6 +46,21 @@ $theme-colors{
 
 
 }
+@media(min-width:701px max-width:767px){
+    #jumbosmscreen{
+        display:none;
+    }
+    }
+    @media(max-width:767px){
+        #jumbosmscreen{
+            display:none;
+            
+        }
+    }
+  
+
+        
+
 #indexsmimg{
     width: 40%;
     height:auto;
@@ -92,6 +106,7 @@ padding-top:-500px;
 }
 #card2{
     width:100%;
+    height:auto;
     border:0px;
     margin-bottom:50px;
 }
@@ -111,7 +126,7 @@ margin-bottom:50px;
 #smbutton{
  margin-left:70px;
 }
-    
+
 
 
 .mt-1{
@@ -160,7 +175,7 @@ margin-bottom:50px;
 }
 
 .jumbotron{
-    padding: 70px 30px 70px 30px;
+    padding: 10px 10px 10px 10px;
     margin: 0px auto;
     background-color:#6c3b88  !important; 
     color: floralwhite !important;
@@ -174,6 +189,7 @@ margin-bottom:50px;
 body{
     padding:50px 0px 0px 0px;
     z-index: 0;
+    
 }
 .navbar-dark {
     background-color:#512da8 !important;
@@ -187,4 +203,6 @@ body{
 .fa-envelope{
     font-size:15px;
 }
-@import "bootstrap";
+.jumbotron{
+
+}

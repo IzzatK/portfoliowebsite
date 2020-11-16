@@ -35,7 +35,7 @@
     </nav>
      <header class="jumbotron">
         <div class="container"> 
-            <div class="row row-header align-items-center">
+            <div class="row row-header align-items-center" id="jumbosmscreen">
                 <div class="col-4 col-sm-4 d-none d-sm-block">
         
                     <h1>Ristorante con Fusion</h1>
@@ -49,7 +49,7 @@
                     <button type="button" class="btn btn-primary btn-lg">Reserve</button>   <!--Reserve table button goes here-->
                 </div>
                 
-            </div> <!-- end the row for xl and l screens -->
+            </div> <!-- end the display row for xl and l screens -->
             <div class="row row-header align-items-top d-xl-none d-l-none d-md-none"> <!--begin seperate rows for small and xs screens, AKA d-xl-none d-l-none-->
                 <h1>Ristorante con Fusion</h1>
                 <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
@@ -72,7 +72,7 @@
                 </div>
             <div class="row">
                 <div class="col-2  order-sm-last" id="pizzadescription">
-                   <h3 class="d-none d-sm-block" id="cardsideheader">Lipsmacking Culinary Creations</h3>
+                   <h3 class="d-sm-none d-none d-xs-none d-xl-block d-md-block d-l-block" id="cardsideheader">Lipsmacking Culinary Creations</h3>
                   <!-- custom classes for padding and margin-->
                 </div> 
             
@@ -81,10 +81,10 @@
                         
                         <img class="img-thumbnail align-self-left pb-2" src="img/tikkapizza.png"id="cardimg3">
                 </div>
-                        <div class="col-6 ">
-                            <h4 class="d-none d-sm-block">Uthapizza<span class="badge badge-danger">Hot</span><span class="badge badge-pill badge-secondary">$4.99</span></h4>
+                        <div class="col-6 "> <!-- important display props below! div below hides header for xl,l,md -->
+                           <div class="d-sm-none d-none d-xl-block d-md-block d-l-block"> <!--This is hidden for xl,l,md--><h4 class="">Uthapizza<span class="badge badge-danger">Hot</span><span class="badge badge-pill badge-secondary">$4.99</span></h4></div>
                             <h5 class="d-xl-none d-l-none d-md-none">Uthapizza<span class="badge badge-danger">Hot</span><span class="badge badge-pill badge-secondary">$4.99</span></h5>
-                            <P class=" mr-1 d-none d-sm-block">paragraph of pizza media obj, add custom class to the p's and h's</P> <!-- add margin to this p-->
+                            <P class=" mr-1 d-none d-sm-block">A unique combination of Indian Uthapppam (pancake) and Italian Pizza,<br>topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion,<br> Guntur Chillies and Buffalo Paneer</P> <!-- add margin to this p-->
                             
                          <!-- empty media-body-->
                         </div>
@@ -109,9 +109,9 @@
                 </div>
         
                 <div class="col-7  " id="buffetbadge"> <!-- this badge div takes up 8 cols of row row-content-->
-                    <h3 class="d-none d-sm-block">Weekend Grand Buffet<span class="badge badge-secondary m-1">New</span></h3><!--use display prop in HTML-->
-                    <h5 class="d-xl-none d-l-none">Weekend Grand Buffet<span class="badge badge-secondary m-1">New</span></h5>
-                    <p class="d-none d-sm-block">Featuring mouthwatering combos with a choice of five different salads,<br>
+                    <h3 class="d-none d-sm-block ml-4">Weekend Grand Buffet<span class="badge badge-secondary m-1">New</span></h3><!--use display prop in HTML-->
+                    <h5 class="d-xl-none d-l-none d-md-none">Weekend Grand Buffet<span class="badge badge-secondary m-1">New</span></h5>
+                    <p class="d-none d-sm-block ml-4">Featuring mouthwatering combos with a choice of five different salads,<br>
                     six enticing appetizers, six main entrees and fice choicest desserts. Free<br>
                     flowing bubbly and soft drinks. All for just $19.99 per person.</p>
                 </div>
