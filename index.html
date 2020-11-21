@@ -160,9 +160,9 @@
 
 
      <header class="jumbotron">
-        <div class="container"> 
+        <div class="container">
             <div class="row row-header align-items-center" id="jumbosmscreen">
-                <div class="col-4 col-sm-4 d-none d-sm-block">
+                <div class="col-4 col-sm-4 d-none d-sm-block"> <!-- same content row for xl,l,md screens-->
         
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
@@ -183,11 +183,12 @@
                                 </a>
                             </span>
                 
-            </div> <!-- end the display row for xl and l screens -->
-            <div class="row row-header align-items-top d-xl-none d-l-none d-md-none"> <!--create seperate rows for small and xs screens, AKA d-xl-none d-l-none-->
+            </div> 
+        </div><!-- end the display row for xl and l screens -->
+            <div class="row row-header align-items-top d-xl-none d-l-none d-md-none d-sm-block d-block"> <!--create seperate rows for small and xs screens, AKA d-xl-none d-l-none-->
                 <h1>Ristorante con Fusion</h1>
                 <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
-            </div>
+            
             <div class="row align-items-middle d-xl-none d-l-none d-md-none pl-5 ml-5">
                 <img src="img/logo.png" class="img-fluid pl-5 ml-1" id="indexsmimg">
             </div>
@@ -198,7 +199,11 @@
                 data-placement="bottom" id="reserve-btn">Reserve</button>
             </div>
         </div>
+        
+    </div>
+    
     </header>
+
 
 <div class="container">
     <div class="col-8 offset-2">
