@@ -215,6 +215,10 @@ body{
 .fa-envelope{
     font-size:15px;
 }
-.jumbotron{
 
+#mycarousel{
+    background-color: #512da8;
+}
+#carouselcaption{
+    padding-left:6000px;
 }
