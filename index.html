@@ -185,18 +185,20 @@
                 
             </div> 
         </div><!-- end the display row for xl and l screens -->
-            <div class="row row-header align-items-top d-xl-none d-l-none d-md-none d-sm-block d-block"> <!--create seperate rows for small and xs screens, AKA d-xl-none d-l-none-->
-                <h1>Ristorante con Fusion</h1>
+            <div class="row row-header align-items-top d-xl-none d-l-none d-md-none d-sm-block d-block ml-5"> <!--create seperate rows for small and xs screens, AKA d-xl-none d-l-none-->
+                <h1 class="ml-3">Ristorante con Fusion</h1>
                 <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
-            
-            <div class="row align-items-middle d-xl-none d-l-none d-md-none pl-5 ml-5">
-                <img src="img/logo.png" class="img-fluid pl-5 ml-1" id="indexsmimg">
             </div>
-            <div class="row align-items-bottom d-xl-none d-l-none d-md-none ml-5 mt-2">
-                <span class="btn btn-warning">
+            <div class="row align-items-middle d-xl-none d-l-none d-md-none pl-5 ml-5"> <!-- read above notes-->
+                <img src="img/logo.png" class="img-fluid pl-5 ml-5" id="indexsmimg">
+            </div>
+            <div class="row align-items-bottom offset-4 d-xl-none d-l-none d-md-none ml-5 mt-2">
+                <span class="btn btn-warning ml-5">
+                    <div class="ml-5 mr-5">
                     <a data-toggle="modal" data-target="#reservetableModal">
                         <span class="fa fa-arrow-down"></span> 
                         <h2 class="text-white">Reserve Table</h2>
+                    </div>
                     </a>
                 </span>
             </div>
@@ -207,10 +209,10 @@
     </header>
 
 
-<div class="container">
-    <div class="col-9 offset-2">
-   
-                <div id="mycarousel" class="carousel slide" data-ride="carousel">
+<div class="container"> <!-- create another carousel for xs screens in order to make background wider, or use media query on image id-->
+    <div class="col-9 offset-2 col-xs-12">
+   <!-- create modal wrapped around this for moocho site-->
+                <div id="mycarousel" class="carousel slide" data-ride="carousel" data-interval="false"  > <!-- data-interval false and remove script at bottom to pause -->
                 
                     <div class="carousel-inner">
                     <div class="carousel-item active" id="carouitem1">
@@ -221,7 +223,7 @@
               
                                   <!-- add margin to this p-->
                                  <div class="carousel-caption  pl-5" id="carouselcaption"> <!-- add some more paragraphs here; each smaller and smaller for each screen size class d-md-none d-l-none d-xl-none d-sm-block, apply proper style to this-->
-                                    <div class="d-sm-none d-none d-xl-block d-md-block d-l-block"> <!--doesn't display for xs,sm--><h4 class="">Uthapizza<span class="badge badge-danger">Hot</span><span class="badge badge-pill badge-secondary">$4.99</span></h4></div>
+                                    <div class="d-sm-none d-none d-xl-block d-md-block d-l-block"> <!--doesn't display for xs,sm--><h4 class="">Uthapizza<span class="badge badge-danger">Hot</span><span class="badge badge-pill badge-secondary">$4.99</span></h4></div> <!-- set data interval=false-->
                                     <P class=" mr-1 d-none d-md-block">A unique combination of Indian Uthapppam (pancake) and Italian Pizza,<br>topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion,<br> Guntur Chillies and Buffalo Paneer</P> <!-- figure out how to make this display for sm xs screens, maybe create a new carousel for miniature screens--> <div class="d-xl-none d-l-none d-md-none d-sm-block"> <h5 class="">Uthapizza<span class="badge badge-danger">Hot</span><span class="badge badge-pill badge-secondary">$4.99</span></h5></div>
                                  </div>
                               <!-- empty media-body-->
@@ -230,7 +232,7 @@
                
                 
                 
-                    <div class="carousel-item" id="carouitem2">
+                    <div class="carousel-item" id="carouitem2" >
                         <img class=" img-fluid d-block mr-2" id="carouselimg"
                              src="img/logo.png" alt="logo">
                            
@@ -269,6 +271,18 @@
             <a class="carousel-control-next" href="#mycarousel" role="button" data-slide="next">
                 <span class="carousel-control-next-icon"></span>
             </a>
+            <div class="btn-group" id="carouselButton">
+                <button class="btn btn-danger btn-sm" id="carousel-pause">
+                    <span class="fa fa-pause">
+
+                    </span>
+                </button>
+                <button class="btn btn-danger btn-sm" id="carousel-play">
+                    <span class="fa fa-play"></span>
+                        
+                    </span>
+                </button>
+        </div>
             
             
             
@@ -479,18 +493,40 @@
            </div>
         </div>
     </footer>
+
+  
+    
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <!-- JQuery code to create  tooltip <script>
-        $(document).ready(function(){
-            $('[data-toggle="tooltip"]').tooltip(); //JQuery syntax
-        });
 
-        
-    </script> -->
- 
-      
+    <script>
+        $(document).ready(function(){
+            $("#mycarousel").carousel( { interval: 2000, pause:"false" } );
+            $("#carousel-pause").click(function(){
+                $("#mycarousel").carousel('pause');
+
+                alert("pause button clicked");
+            });
+            $("#carousel-play").click(function(){
+                $("#mycarousel").carousel('cycle');
+            });
+        });
+    </script>
+    <!--
+<script type='text/javascript'>
+    $(window).load(function(){
+        $(function(){
+            $('#mycarousel').carousel({
+                interval:2, pause:"false"
+            });
+
+
+        });
+    
+</script>
+-->
+    
 </body>
 
 </html>
