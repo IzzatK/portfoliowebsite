@@ -14,6 +14,10 @@ padding-left:50px;
 padding-right:50px;
 }
 
+#xbtn{
+    color:#D3D3D3;
+}
+
 
 
 @media(max-width:480 px){ /*used to add padding,margin or other necessary props to style div classes */

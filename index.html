@@ -8,6 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <link rel="stylesheet" href="css/styles.css"> 
+  <link rel="stylesheet" href="css/stylessass.css">
   <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
@@ -32,7 +33,7 @@
             </div>
                 </ul>
                 <span class="navbar-text">
-                    <a data-toggle="modal" data-target="#loginModal">
+                    <a id="logintableButton"> <!-- remove data-toggle="modal" and data-target=#loginmodalfor assignment 4, do this for reserve button on md,l,xl screen-->
                         <span class="fa fa-sign-in"></span> 
                         <h2>Login</h2>
                     </a>
@@ -43,13 +44,15 @@
     <div id="loginModal" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg" role="content">
             <div class="modal-content">
+                <div id="modalheaderstyle"> <!-- style for this id is in stylessass.css-->
                 <h3 class="pt-5 pl-5 modal-title" id="modaltitle">Login</h3> <!-- use id apply 0px border-bottom-->
                 <div class="modal-header"> <!-- place tabbed nav here to replace as seen on aboutus page, to create login/register form-->
-                    <button type="button" class="close" data-dismiss="modal">
+                    <button type="button" class="close" data-dismiss="modal" id="xbtn">
                         &times;
                     </button>
                 </div>
-                <div class="modal-body"> <!-- add nav-tab content here -->
+            </div>
+                <div class="modal-body" id="modalbackgroundstyle"> <!-- add nav-tab content here -->
                     <form>
                         <div class="form-row">
                             <div class="form-group col-sm-4">
@@ -82,15 +85,16 @@
     <div id="reservetableModal" class="modal fade" role="dialog"> <!--reserve table modal-->
         <div class="modal-dialog modal-lg" role="content">
             <div class="modal-content">
+                <div id="modalheaderstyle">
                 <div class="modal-header pb-5" id="modalxbtn">
-                    <button type="button" class="close pb-5" data-dismiss="modal">
+                    <button type="button" class="close pb-5" data-dismiss="modal" id="xbtn">
                         &times;
                     </button>
                 </div>
                 <h3 class=" pl-5">Reserve a Table</h3>
-              
-                <div class="modal-body"></div>
-                <div class="d-flex "> <!-- d flex table, seperate rows for each row of content in card -->
+            </div>
+                
+                <div class="d-flex" id="modalbackgroundstyle"> <!-- d flex table, seperate rows for each row of content in card -->
                     <div class="row-content  justify-content-center "> 
                         <div class="card" id="reservationcardModal"> <!-- to change bg-color vals, go to bootstrap.css in node_modules-->
                            <!-- <h3 class="card-header bg-warning text-white text-center">Hello</h3> Remover header for this reservetableModal-->
@@ -177,7 +181,7 @@
                             title="Or call us at<br><strong>+85212345678</strong>"
                             data-placement="bottom" id="reserve-btn">Reserve</button>   <!--Reserve table button goes here-->
                             <span class="btn btn-warning">
-                                <a data-toggle="modal" data-target="#reservetableModal">
+                                <a id="reservetableButton"> <!-- remove data-toggle=modal for assignment 4-->
                                     <span class="fa fa-arrow-down"></span> 
                                     <h2 class="text-white">Reserve Table</h2>
                                 </a>
@@ -194,13 +198,12 @@
             </div>
             <div class="row align-items-bottom offset-4 d-xl-none d-l-none d-md-none ml-5 mt-2">
                 <span class="btn btn-warning ml-5">
-                    <div class="ml-5 mr-5">
-                    <a data-toggle="modal" data-target="#reservetableModal">
-                        <span class="fa fa-arrow-down"></span> 
-                        <h2 class="text-white">Reserve Table</h2>
-                    </div>
-                    </a>
-                </span>
+                    
+                        <a data-toggle="modal" data-target="#reservetableModal"> <!-- must keep data-* attributes to ensure modal still functions for sm and xs screens-->
+                            <span class="fa fa-arrow-down"></span> 
+                            <h2 class="text-white">Reserve Table</h2>
+                        </a>
+                    
             </div>
         </div>
         
@@ -526,6 +529,18 @@
                    
                });
 
+         });
+         $(document).ready(function(){
+            $("#reservetableButton").click(function(){
+                $("#reservetableModal").modal('toggle')
+            });
+            
+         });
+
+         $(document).ready(function(){
+             $("#logintableButton").click(function(){
+                $("#loginModal").modal('toggle')
+             });
          });
     </script>
 
