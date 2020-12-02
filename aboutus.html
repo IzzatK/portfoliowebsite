@@ -36,20 +36,51 @@
     </nav>
 
     <header class="jumbotron">
-        <div class="container"> <!-- the body content of this page is apart of one container, with individual rows-->
-            <div class="row row-header">
-                <div class="col-12 col-sm-6">
+        <div class="container">
+                    <div class="row row-header align-items-center" id="jumbosmscreen">
+                <div class="col-4 col-sm-4 d-none d-sm-block"> <!-- same content row for xl,l,md screens-->
         
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 
                 </div>
-                <div class="col-2 col-sm-4">
-                    <img src="img/logo.png" class="img-fluid">
+                <div class="col-4 col-sm-4 d-none d-sm-block  "><!-- give this image 4 columns, to center it inside of the 12 col Bootstrap layout-->
+                    <img src="img/logo.png" class="img-fluid float-right"> <!-- image inside-->
                 </div>
-               
+                           <!-- <div class="col-4 d-none d-sm-block">
+                  <!-- create tooltip using jQuery script-->  <!--<button type="button" class="btn btn-primary btn-lg pl-6 pr-6"
+                            data-toggle="tooltip" data-html="true" 
+                            title="Or call us at<br><strong>+85212345678</strong>"
+                            data-placement="bottom" id="reserve-btn">Reserve</button>   <!--Reserve table button goes here
+                            <span class="btn btn-warning">
+                                <a id="reservetableButton"> <!-- remove data-toggle=modal for assignment 4
+                                    <span class="fa fa-arrow-down"></span> 
+                                    <h2 class="text-white">Reserve Table</h2>
+                                </a>
+                            </span>
+                
+                            </div>  -->
+                    </div><!-- end the display row for xl and l screens -->
+            <div class="row row-header align-items-top d-xl-none d-l-none d-md-none d-sm-block d-block ml-5"> <!--create seperate rows for small and xs screens, AKA d-xl-none d-l-none-->
+                <h1 class="ml-3">Ristorante con Fusion</h1>
+                <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
             </div>
+            <div class="row align-items-middle d-xl-none d-l-none d-md-none pl-5 ml-5"> <!-- read above notes-->
+                <img src="img/logo.png" class="img-fluid pl-5 ml-5" id="indexsmimg">
+            </div>
+            <!-- <div class="row align-items-bottom offset-4 d-xl-none d-l-none d-md-none ml-5 mt-2">
+                <span class="btn btn-warning ml-5">
+                    <div class="ml-5 mr-5">
+                        <a data-toggle="modal" data-target="#reservetableModal"> <!-- must keep data-* attributes to ensure modal still functions for sm and xs screens
+                            <span class="fa fa-arrow-down"></span> 
+                            <h2 class="text-white">Reserve Table</h2>
+                        </a>
+                    </div> 
+            </div> -->
         </div>
+        
+    </div>
+    
     </header>
 
    
@@ -295,6 +326,7 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>

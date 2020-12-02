@@ -96,7 +96,7 @@
                 
                 <div class="d-flex" id="modalbackgroundstyle"> <!-- d flex table, seperate rows for each row of content in card -->
                     <div class="row-content  justify-content-center "> 
-                        <div class="card" id="reservationcardModal"> <!-- to change bg-color vals, go to bootstrap.css in node_modules-->
+                        <div class="card" id="modalbackgroundstyle"> <!-- to change bg-color vals, go to bootstrap.css in node_modules-->
                            <!-- <h3 class="card-header bg-warning text-white text-center">Hello</h3> Remover header for this reservetableModal-->
                                 <div class="card-body">
                                     <div class="row  justify-content-left"> <!-- create individual rows for div class=card-body of the card, add offset to <br> lines-->
@@ -507,42 +507,7 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
-    <script>
-         $(document).ready(function(){
-            $("#mycarousel").carousel( { interval: 2000, pause:"false" } );
-
-            $("#carouselButton").click(function(){
-                   $("#mycarousel").carousel('pause');
-                    if($('#carouselButton').children('span').hasClass('fa-pause')){
-                        $('#mycarousel').carousel('pause');
-                        $("#carouselButton").children('span').removeClass('fa-pause')
-                        $('#carouselButton').children('span').addClass('fa-play')
-                        alert("carousel is paused");
-                    }  
-                    else if($('#carouselButton').children('span').hasClass('fa-play')){
-                        $('#mycarousel').carousel('cycle');
-                        $('#carouselButton').children('span').removeClass('fa-play')
-                        $('#carouselButton').children('span').addClass('fa-pause')
-                        alert("carousel is resuming");
-                    }  
-                   
-               });
-
-         });
-         $(document).ready(function(){
-            $("#reservetableButton").click(function(){
-                $("#reservetableModal").modal('toggle')
-            });
-            
-         });
-
-         $(document).ready(function(){
-             $("#logintableButton").click(function(){
-                $("#loginModal").modal('toggle')
-             });
-         });
-    </script>
+    <script src="js/scripts.js"></script>
 
 
    
