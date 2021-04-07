@@ -1,4 +1,8 @@
-
+#carouselheading2
+{
+    position:relative;
+    left:-17px;
+}
 #carouselButton{
     z-index:1;
     position:absolute;
@@ -199,8 +203,10 @@ padding-left:30px;
 .jumbotron{
     padding: 10px 10px 10px 10px;
     margin: 0px auto;
-    background-color:#6c3b88  !important; 
+    background-color:orange  !important; 
     color: floralwhite !important;
+    position:relative;
+    bottom:50px;
 }
 
 .address{
@@ -214,7 +220,7 @@ body{
     
 }
 .navbar-dark {
-    background-color:#512da8 !important;
+    background-color:orange !important;
 }
 .fa-phone{
     font-size:15px; /* Pelicana Chicken icon at top left can be a custom icon of company logo, alongside rectangular logo*/
@@ -235,6 +241,10 @@ body{
 #carouselitemimg{
     min-height:300px;
 }
+#carouselimg
+{
+    width:100%;
+}
 #modalxbtn{
     border-bottom:0px;
 }
@@ -243,4 +253,53 @@ body{
     border-bottom:0px;
     border-right:0px;
     border-top: 0px;
+}
+#swlist
+{
+    list-style-type:disc;
+    list-style-position: inside;
+}
+#carouselheading1
+{
+    position:relative;
+    left:777px;
+}
+
+@media(min-width:1201px) and (max-width:1310px)
+{
+    #carouselheading1
+    {
+        position:relative;
+        left:557px;
+    }
+}
+@media(min-width:992px) and (max-width:1200px)
+{
+    #carouselheading1
+    {
+        position:relative;
+        left:507px;
+    }
+}
+@media(min-width:1311px) and (max-width:1466px)
+{
+    #carouselheading1
+    {
+        position:relative;
+        left:637px;
+    }
+}
+@media(min-width:1467px)
+{
+    #carouselheading1{
+    position:relative;
+    left:680px;
+}
+}
+@media(min-width:480px) and (max-width:767px)
+{
+    #carouselheading2
+    {
+      
+    }
 }
