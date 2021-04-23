@@ -1,3 +1,6 @@
+
+
+
 #carouselheading2
 {
     position:relative;
@@ -241,7 +244,8 @@ body{
 #carouselitemimg{
     min-height:300px;
 }
-#carouselimg
+/* Below ID selector is used to create full image carousel!!!*/
+#carouselimg 
 {
     width:100%;
 }
