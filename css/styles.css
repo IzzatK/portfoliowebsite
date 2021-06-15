@@ -187,7 +187,8 @@ padding-left:30px;
 }
 
 .footer {
-    background-color: #c7b7e4;
+    background-color: darkblue;
+    color:white;
     margin: 0px auto;
     padding: 20px 0px 20px 0px;
     background-size: 1000%;
@@ -221,6 +222,10 @@ body{
     padding:50px 0px 0px 0px;
     z-index: 0;
     
+}
+#icons
+{
+    background-color: orange;
 }
 .navbar-dark {
     background-color:orange !important;
@@ -260,13 +265,64 @@ body{
 }
 #swlist
 {
+    color:black;
     list-style-type:disc;
     list-style-position: inside;
 }
+#swlist2
+{
+    color:black;
+    list-style-type:disc;
+    list-style-position: inside;
+    position:relative;
+    top:20px;
+}
+#swlist3
+{
+    color:black;
+    list-style-type:disc;
+    list-style-position: inside;
+    position:relative;
+    top:40px;
+}
+.carouheader
+{
+    color:black;
+}
+#dansonsheader
+{
+    position:relative;
+    top:40px;
+}
+#dansonsheader2
+{
+    position:relative;
+    top:20px;
+}
+#dansonsheader3
+{
+    position:relative;
+    bottom:90px;
+}
+
+#dansonsheader4
+{
+    position:relative;
+    bottom:53.7px;
+}
+
 #carouselheading1
 {
     position:relative;
     left:777px;
+}
+
+@media(min-width:768px) and (max-width:991px)
+{
+    #dansonsheader2
+    {
+        display:none;
+    }
 }
 
 @media(min-width:1201px) and (max-width:1310px)
@@ -297,7 +353,7 @@ body{
 {
     #carouselheading1{
     position:relative;
-    left:680px;
+    left:780px;
 }
 }
 @media(min-width:480px) and (max-width:767px)
