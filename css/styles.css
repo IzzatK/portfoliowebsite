@@ -1,11 +1,58 @@
 
 
 
-#carouselheading2
+
+
+@media(min-width:992px) and (max-width:1150px)
 {
-    position:relative;
-    left:-17px;
+    #carouseltitle
+    {
+        position:relative;
+        left:437px;
+    }
 }
+@media(min-width:1151px) and (max-width:1250px)
+{
+    #carouseltitle{
+        position:relative;
+        left:487px;
+    }
+}
+@media(min-width:1251px) and (max-width:1350px)
+{
+    #carouseltitle
+    {
+        position:relative;
+        left:550px;
+    }
+}
+@media(min-width:1351px) and (max-width:1500px)
+{
+    #carouseltitle
+    {
+        position:relative;
+        left:607px;
+    }
+}
+@media(min-width:1501px)  and (max-width:1570px)
+{
+    #carouseltitle
+    {
+        position:relative;
+        left:687px;
+    }
+}
+@media(min-width:1571px)
+{
+    #carouseltitle
+    {
+        position:relative;
+        left:777px;
+    }
+}
+
+
+
 #carouselButton{
     z-index:1;
     position:absolute;
@@ -29,6 +76,11 @@ padding-right:50px;
 }
 #modalheaderstyle{
     color:#ddd;
+}
+
+#carouseltitle
+{
+    display:none;
 }
 
 
@@ -88,6 +140,14 @@ padding-right:50px;
     width: 40%;
     height:auto;
    
+}
+#logoimg
+{
+    width:40%;
+    height:auto;
+    position:relative;
+    bottom:200px;
+    left:100px;
 }
 .tab-content{
     border-left: 1px solid #ddd;
