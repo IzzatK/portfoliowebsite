@@ -2,7 +2,76 @@
 
 
 
+@media(max-width:537px)
+{
+    #dansonsheader4
+    {
+        position:relative;
+        bottom:-47px;
+        color:rgb(102, 255, 0);
+    }
+}
 
+@media(max-width:493px)
+{
+    #dansonsheader4
+    {
+        position:relative;
+        bottom:-80px;
+        color:rgb(102, 255, 0);
+    }
+
+}
+
+@media(max-width:424px)
+{
+    #dansonsheader4
+    {
+        position:relative;
+        bottom:-110px;
+        color:rgb(102, 255, 0);
+    }
+
+}
+
+@media(max-width:369px)
+{
+    #dansonsheader4
+    {
+        position:relative;
+        bottom:-150px;
+        color:rgb(102, 255, 0);
+    }
+
+}
+
+@media(max-width:575px)
+{
+    #swlist3
+    {
+        display:none;
+    }
+}
+@media(max-width:767px)
+{
+    #carouseltitle1text
+    {
+        display:none;
+    }
+    #carouseltitle
+    {
+        display:none;
+    }
+}
+@media(min-width:481px) and (max-width:610px)
+{
+    #carouseltitle2
+    {
+        position:relative;
+        left:-31px;
+    }
+ 
+}
 @media(min-width:992px) and (max-width:1150px)
 {
     #carouseltitle
@@ -11,6 +80,25 @@
         left:437px;
     }
 }
+
+
+@media(min-width:380px) and (max-width:480px)
+{
+#carouseltitle2
+{
+    position:relative;
+    right:70px;
+}
+}
+@media(min-width:279px) and (max-width:379px)
+{
+    #carouseltitle2
+    {
+        position:relative;
+        right:60px;
+    }
+}
+
 @media(min-width:1151px) and (max-width:1250px)
 {
     #carouseltitle{
@@ -365,11 +453,7 @@ body{
     bottom:90px;
 }
 
-#dansonsheader4
-{
-    position:relative;
-    bottom:53.7px;
-}
+
 
 #carouselheading1
 {
