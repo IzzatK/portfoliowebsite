@@ -32,3 +32,51 @@
                 $("#loginModal").modal('toggle')
              });
          });
+
+         var element = document.getElementById("display1sttab");
+         var element2 = document.getElementById("display2ndtab");
+         var element3 = document.getElementById("display3rdtab");
+         var element4 = document.getElementById("display4thtab");
+
+
+
+function displayfreelance1(){ 
+ 
+  if(element.Id="display1sttab") {
+    element.style.display="block";
+    element2.style.display="none";
+    element3.style.display="none";
+    element4.style.display="none";
+    }
+
+}
+function displayfreelance2(){ 
+ 
+    if(element2.Id="display2ndtab") {
+      element.style.display="none";
+      element2.style.display="block";
+      element3.style.display="none";
+      element4.style.display="none";
+      }
+  
+  }
+  function displayprojects(){ 
+ 
+    if(element2.Id="display2ndtab") {
+      element.style.display="none";
+      element2.style.display="none";
+      element3.style.display="block";
+      element4.style.display="none";
+      }
+  
+  }
+  function displaycompany(){ 
+ 
+    if(element2.Id="display2ndtab") {
+      element.style.display="none";
+      element2.style.display="none";
+      element3.style.display="none";
+      element4.style.display="block";
+      }
+  
+  }

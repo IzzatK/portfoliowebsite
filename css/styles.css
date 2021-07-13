@@ -60,12 +60,49 @@
     bottom:5px;
     color:darkorange;
 }
+/*
+@media(max-width: 1196px)
+{
+    #xldisplaytabbuttons
+    {
+        display:none;
+    }
+}
+*/
+
+@media(min-width: 1195px)
+{
+    #xldown
+    {
+        display:none;
+       
+    }
+}
+@media(max-width:1195px)
+{
+    #xldown
+    {
+        
+    }
+}
+
 #active
 {
     border-color:darkgreen;
     border-style:solid;
 }
-
+#display2ndtab
+{
+    display:none;
+}
+#display3rdtab
+{
+    display:none;
+}
+#display4thtab
+{
+    display:none;
+}
 /*
 
 
