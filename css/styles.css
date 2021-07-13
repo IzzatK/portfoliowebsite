@@ -54,7 +54,17 @@
     }
 
 }
-
+#dansonsheader6
+{
+    position:relative;
+    bottom:5px;
+    color:darkorange;
+}
+#active
+{
+    border-color:darkgreen;
+    border-style:solid;
+}
 
 /*
 
@@ -106,6 +116,7 @@
     #dansonsheader6
     {
         display:none;
+        color:darkorange;
     }
     #dansonsheader7
     {
