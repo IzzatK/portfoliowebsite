@@ -41,19 +41,35 @@
                 <div class="col-4 col-sm-4 d-none d-sm-block  "><!-- give this image 4 columns, to center it inside of the 12 col Bootstrap layout-->
                     <img src="img/izz.png" class="img-fluid float-right"> <!-- image inside-->
                 </div>
-                <div class="col-4 d-none d-sm-block">
+                <div class="col-4 d-none d-sm-block mt-5">
+                    
                   <!-- create tooltip using jQuery script-->  <!--<button type="button" class="btn btn-primary btn-lg pl-6 pr-6"
                             data-toggle="tooltip" data-html="true" 
                             title="Or call us at<br><strong>+85212345678</strong>"
                             data-placement="bottom" id="reserve-btn">Reserve</button>   <!--Reserve table button goes here-->
                             <h1>Skills/Tools</h1>
-                            <p>Back End: Java Spring, Python Django, PHP Laravel, JavaScript, Node.js.Express, RESTful API, Postman, CRUD API.<br>
+                            <p>Back End: Java Spring, Python Django, PHP Laravel, JavaScript, Node.js.Express, RESTful API, Postman, CRUD API.
                                 <br> Front End: HTML, CSS3, Sass, Bootstrap, Reactstrap, Materiaul-UI, Angular, React, Vue, jQuery.
-                                <br> 
+                               
                                 <br>Version Control: Git/Github. 
-                                <br><br> IDES: Eclipse, Visual Studio, Code, IntelliJ
-                                <br> <br>Database Systems: MongoDB, MySQL, MS SQL, PostgreSQL.
+                                 <br>IDES: Eclipse, Visual Studio, Code, IntelliJ
+                               Database Systems: MongoDB, MySQL, MS SQL, PostgreSQL.
                             </p>
+                            <h5>Contact Info</h5>
+                    <address class="fa fa-address-card">
+		           
+		             <i class="fa fa-phone"></i> Tel.: +631 827 7180<br>
+		             
+		             <span class="fa fa-envelope"></span> Email: <a href="mailto:izzatkhadim@gmail.com">izzatkhadim@gmail.com</a>
+		           </address>
+                    <div class="text-center">
+                        <a class="btn btn-social-icon btn-google" href="http://google.com/+"><span class="fa fa-google-plus"></span></a>
+                        <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><span class="fa fa-facebook"></span></a>
+                        <a class="btn btn-social-icon btn-linkedin"href="http://www.linkedin.com/in/"><span class="fa fa-linkedin"></a>
+                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><span class="fa fa-twitter"></span></a>
+                        <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><span class="fa fa-youtube"></span></a>
+                        <a class="btn btn-social-icon"href="mailto:confusion@food.net"><span class="fa fa-envelope-o"></span></a>
+                    </div>
                 
             </div> 
         </div><!-- end the display row for xl and l screens -->
@@ -79,7 +95,21 @@
                     <br><br> IDES: Eclipse, Visual Studio, Code, IntelliJ
                     <br> <br>Database Systems: MongoDB, MySQL, MS SQL, PostgreSQL.
                 </p>
-    
+                <h5>Contact Info</h5>
+                <address class="fa fa-address-card">
+               
+                 <i class="fa fa-phone"></i> Tel.: +631 827 7180<br>
+                 
+                 <span class="fa fa-envelope"></span> Email: <a href="mailto:izzatkhadim@gmail.com">izzatkhadim@gmail.com</a>
+               </address>
+                <div class="text-center">
+                    <a class="btn btn-social-icon btn-google" href="http://google.com/+"><span class="fa fa-google-plus"></span></a>
+                    <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><span class="fa fa-facebook"></span></a>
+                    <a class="btn btn-social-icon btn-linkedin"href="http://www.linkedin.com/in/"><span class="fa fa-linkedin"></a>
+                    <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><span class="fa fa-twitter"></span></a>
+                    <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><span class="fa fa-youtube"></span></a>
+                    <a class="btn btn-social-icon"href="mailto:confusion@food.net"><span class="fa fa-envelope-o"></span></a>
+                </div>
 
             </div>
         </div>
@@ -87,10 +117,11 @@
     </div>
     
     </header>
+    <!--
 <div id="carouseltitle" class="d-flex align-items-center align-self-center text-center d-md-none d-lg-block d-xl-block" id="carouselheading1">
     <div class="row">
         <div class="col-3">
-            <h3 id="carouseltitle1text">Please find my previous EXP below</h3> <!-- fix this for min breakpoint of 992 px to max breakpoint of 1107 px-->
+            <h3 id="carouseltitle1text">Please find my previous EXP below</h3> <!-- fix this for min breakpoint of 992 px to max breakpoint of 1107 px
         </div>
     </div>
 </div>
@@ -101,9 +132,12 @@
         </div>
     </div>
 </div>
+-->
 
 <div class="container mb-5"> <!-- create another carousel for xs screens in order to make background wider, or use media query on image id-->
-    <div class="col-9 offset-2 col-xs-12">
+   <div class="row">
+    <div class="col-7  col-xs-12">
+        
    <!-- create modal wrapped around this for moocho site-->
                 <div id="mycarousel" class="carousel slide" data-ride="carousel" data-interval="false"  > <!-- data-interval false and remove script at bottom to pause -->
                 
@@ -207,12 +241,60 @@
             
         
          </div>
+         </div>
+         <div class="col-3 offset-2">
+            <ul class="nav nav-tabs">
+                <div id="xldisplaytabbuttons">
+                <li class="mr-2 ml-2" id="active" ><button onClick="displayfreelance1()">Freelance Engineer Position #1</button></li>
+                <li  class="mr-2 ml-2"><button onClick="displayfreelance2()">Freelance Engineer Position #2</button></li>
+                <li  class="mr-2 ml-2"><button onClick="displayprojects()">Personal Projects</button></li>
+                <li  class="mr-2 ml-2"><button onClick="displaycompany()">Current Company</button></li>
+            </div>
+            
+            </ul>
+            <div class="tab-content">
+                 <div id="menu1" class="tab-pane  active"> 
+                     <div id="display1sttab">
+                     <h3>Freelance Engineer Full Stack #1</h3>
+                     Working on Freelance Full Stack Engineering Social Media website using MERN stack. Utilizing MERN stack along with React Native to plan, database, debelop, engineer, test, and deploy a mobile app version of the project.
+                 </div>
+                 <div id="display2ndtab" >
+                    <h3>Freelance Engineer Full Stack #2</h3>
+                    Working on another Freelance Full Stack Engineering website using MERN stack. This one will be an e-commerce website. Utilizing MERN stack along with React Native to plan, database, debelop, engineer, test, and deploy a mobile app version of the project.
+                </div>
+                <div id="display3rdtab" >
+                    <h3>Personal Projects</h3>	
+                     Planning, writing/directing, developing, engineering, and testing a single player video game using C#, C++, and Unity Engine.
+                </div>
+                <div id="display4thtab" >
+                    <h3>Current Company</h3>	
+                    Currently working for SuperWorld as a Software Engineer Intern.
+                </div>
+                </div>
+                 <!----
+                 <div id="menu2" class="tab-pane fade"> 
+                     <h3>Freelance Engineer Full Stack #2</h3>
+                     Working on another Freelance Full Stack Engineering website using MERN stack. This one will be an e-commerce website. Utilizing MERN stack along with React Native to plan, database, debelop, engineer, test, and deploy a mobile app version of the project.
+            
+                 </div>
+                 <div id="menu3" class="tab-pane fade"> 
+                     <h3>Personal Projects</h3>	
+                     Planning, writing/directing, developing, engineering, and testing a single player video game using C#, C++, and Unity Engine.
+                 </div>
+                 <div id="menu4" class="tab-pane fade"> 
+                    <h3>Current Company</h3>	
+                    Currently working for SuperWorld as a Software Engineer Intern.
+                </div>
+            -->
+            </div>
+         </div>
     </div>
 </div>
+<!----
 <div id="carouseltitle" class="d-flex align-items-center mb-5 align-self-center text-center d-md-none d-lg-block d-xl-block" id="carouselheading1">
     <div class="row">
         <div class="col-3">
-            <h3 id="carouseltitle1text">Please find current/future information about my Software Engineer career below</h3> <!-- fix this for min breakpoint of 992 px to max breakpoint of 1107 px-->
+            <h3 id="carouseltitle1text">Please find current/future information about my Software Engineer career below</h3> <!-- fix this for min breakpoint of 992 px to max breakpoint of 1107 px--
         </div>
     </div>
 </div>
@@ -223,55 +305,13 @@
         </div>
     </div>
 </div>
+-->
 <div class="col-8 offset-2">
     
-<ul class="nav nav-tabs">
-    <div id="xldisplaytabbuttons">
-	<li class="mr-2 ml-2" id="active" ><button onClick="displayfreelance1()">Freelance Engineer Position #1</button></li>
-    <li  class="mr-2 ml-2"><button onClick="displayfreelance2()">Freelance Engineer Position #2</button></li>
-    <li  class="mr-2 ml-2"><button onClick="displayprojects()">Personal Projects</button></li>
-    <li  class="mr-2 ml-2"><button onClick="displaycompany()">Current Company</button></li>
-</div>
 
-</ul>
-<div class="tab-content">
-	 <div id="menu1" class="tab-pane  active"> 
-         <div id="display1sttab">
-     	<h3>Freelance Engineer Full Stack #1</h3>
-     	Working on Freelance Full Stack Engineering Social Media website using MERN stack. Utilizing MERN stack along with React Native to plan, database, debelop, engineer, test, and deploy a mobile app version of the project.
-     </div>
-     <div id="display2ndtab" >
-        <h3>Freelance Engineer Full Stack #2</h3>
-        Working on another Freelance Full Stack Engineering website using MERN stack. This one will be an e-commerce website. Utilizing MERN stack along with React Native to plan, database, debelop, engineer, test, and deploy a mobile app version of the project.
-    </div>
-    <div id="display3rdtab" >
-    	<h3>Personal Projects</h3>	
-     	Planning, writing/directing, developing, engineering, and testing a single player video game using C#, C++, and Unity Engine.
-    </div>
-    <div id="display4thtab" >
-        <h3>Current Company</h3>	
-        Currently working for SuperWorld as a Software Engineer Intern.
-    </div>
-    </div>
-     <!----
-     <div id="menu2" class="tab-pane fade"> 
-     	<h3>Freelance Engineer Full Stack #2</h3>
-         Working on another Freelance Full Stack Engineering website using MERN stack. This one will be an e-commerce website. Utilizing MERN stack along with React Native to plan, database, debelop, engineer, test, and deploy a mobile app version of the project.
 
-     </div>
-     <div id="menu3" class="tab-pane fade"> 
-     	<h3>Personal Projects</h3>	
-     	Planning, writing/directing, developing, engineering, and testing a single player video game using C#, C++, and Unity Engine.
-     </div>
-     <div id="menu4" class="tab-pane fade"> 
-        <h3>Current Company</h3>	
-        Currently working for SuperWorld as a Software Engineer Intern.
-    </div>
--->
 </div>
--->
-</div>
-
+<!----
     <footer class="footer">
         <div class="container">
             <div class="row">             
@@ -303,6 +343,7 @@
            </div>
         </div>
     </footer>
+-->
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.3/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
