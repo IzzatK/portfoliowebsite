@@ -376,7 +376,7 @@ padding-right:50px;
         
 
 #indexsmimg{
-    width: 40%;
+    width: 120%;
     height:auto;
    
 }
@@ -502,6 +502,58 @@ padding-left:30px;
     position: absolute;
     width:100%;
 }
+#verticaltab
+{
+    position:relative;
+    left:-733.7px;
+    /*width:17%;*/
+    width:20%;
+    bottom:1750px;
+ 
+   
+   
+    background-color: #5F9EA0;
+
+}
+#cadetbluebackground
+{
+    position:relative;
+  
+    height:1800px;
+    width:520px;
+    z-index:-1;
+    background-size:1000px 1000px;
+    background-color:#5F9EA0;
+}
+
+@media(min-width:1579px) and (max-width:1679px)
+{
+    #verticaltab
+    {
+        position:relative;
+        left:-500px;
+        width:20%;
+        bottom:1750px;
+    }
+}
+@media(min-width:1479px) and (max-width:1578px)
+{
+    #verticaltab
+    {
+        position:relative;
+        left:-450px;
+        width:20%;
+        bottom:1750px;
+    }
+}
+#carouselcontainer
+{
+    position:relative;
+    bottom:2457px;
+    left:800px;
+    
+}
+
 
 .jumbotron{
     padding: 10px 10px 10px 10px;
@@ -517,9 +569,14 @@ padding-left:30px;
     margin: 0px;
     color: #0f0f0f;
 }
+/* fix huge body empty space with overflow:hidden!!!!!!!!*/
 body{
-    padding:50px 0px 0px 0px;
-    z-index: 0;
+    
+ overflow:hidden;
+    
+}
+#bottomverttab
+{
     
 }
 #icons
